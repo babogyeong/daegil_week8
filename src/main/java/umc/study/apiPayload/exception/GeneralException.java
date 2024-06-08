@@ -7,6 +7,9 @@ public class GeneralException extends RuntimeException{
 
     private BaseErrorCode code;
 
+    public GeneralException(BaseErrorCode errorCode) {
+    }
+
     public ErrorReasonDTO getErrorReason() {
         return this.code.getReason();
     }
